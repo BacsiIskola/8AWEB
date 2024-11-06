@@ -8,15 +8,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <div class="topnav" id="myTopnav">
+        <a href="info.html" id="login" class="active">Bejelentkezés</a>
         <a href="index.html" >Home</a>
         <a href="galery.html">Galéria</a>
-        <a href="info.html" class="active">Információk</a>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
+
+      <div id="infodiv">
+      <div id="infokartya1" class="hstack">
+        
+        <h1>Információk1</h1>
+
+        <p class="infoszoveg1">
+          Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg 
+
+        </p>
+
+
+      </div>
+      <div id="infokartya2" class="hstack">
+        
+        <h1>Információk2</h1>
+
+        <p class="infoszoveg2">
+          Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg 
+
+        </p>
+
+
+      </div>
+      <div id="infokartya3" class="hstack">
+        
+        <h1>Információk3</h1>
+
+        <p class="infoszoveg3">
+          Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg Infoszöveg 
+
+        </p>
+
+
+      </div>
+      </div>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      entry.target.classList.add('show1');
+      entry.target.classList.add('sstack');
+    } else {
+      entry.target.classList.remove('show');
+      entry.target.classList.remove('show1');
+      entry.target.classList.remove('sstack');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden, .hidden1, .hstack');
+hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
 </body>
 </html>

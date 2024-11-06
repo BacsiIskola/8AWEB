@@ -334,7 +334,6 @@ font-size: 17px;
 
 /* Change the color of links on hover */
 .topnav a:hover {
-background-color: #ffffff00;
 color: rgb(88, 88, 88);;
 }
 
@@ -498,4 +497,45 @@ display: none;
   #bottomdiv3{
     margin-left: 15vw;
     display: inline-flex;
+  }
+
+  #infokartya1{
+    margin-top: 20vh;
+    width: 25vw;
+    height: 50vh;
+    background-color: aliceblue;
+    margin-left: 5vw;
+    padding: 2vw;
+    border-radius: 40px;
+    display: inline-block;
+  }
+  #infokartya2{
+    margin-top: 20vh;
+    width: 25vw;
+    height: 50vh;
+    background-color: aliceblue;
+    margin-left: 5vw;
+    padding: 2vw;
+    border-radius: 40px;
+    display: inline-block;
+  }
+  #infokartya3{
+    margin-top: 20vh;
+    width: 25vw;
+    height: 50vh;
+    background-color: aliceblue;
+    margin-left: 5vw;
+    padding: 2vw;
+    border-radius: 40px;
+    display: inline-block;
+  }
+  #login{
+    background-color: rgb(255, 255, 255);
+    width: fit-content+1vw;
+    border-radius: 120px;
+  }
+  #login:hover{
+    background-color: rgb(255, 255, 255);
+    width: fit-content+1vw;
+    border-radius: 120px;
   }
