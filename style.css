@@ -9,6 +9,7 @@ body{
   font-style: normal;
   color: rgb(88, 88, 88);
   overflow-x: hidden;
+  height: 100%;
 }
 
 .container {
@@ -144,24 +145,24 @@ box-sizing: border-box;
 }
 
 .hstack:nth-child(1){
-  opacity: 0.75;
+  opacity: 0.15;
   transform: translateX(-100%);
   filter: blur(3px);
 }
 .hstack:nth-child(2){
-  opacity: 0.75;
+  opacity: 0.25;
   transform: translateX(-100%);
-  filter: blur(3px);
+  filter: blur(4px);
 }
 .hstack:nth-child(3){
-  opacity: 0.75;
+  opacity: 0.35;
   transform: translateX(-100%);
-  filter: blur(3px);
+  filter: blur(5px);
 }
 .hstack:nth-child(4){
-  opacity: 0.75;
+  opacity: 0.55;
   transform: translateX(-100%);
-  filter: blur(3px);
+  filter: blur(6px);
 }
 
 
@@ -539,3 +540,61 @@ display: none;
     width: fit-content+1vw;
     border-radius: 120px;
   }
+
+  #body{
+    background-image: url(pics/gallery/kep\ \(14\).jpg);
+    background-size: 100%;
+    background-position: 0 -15vh;
+  }
+  .LoginForm{
+    /*background: inherit;
+    background-position: 0vw 130.8vh;*/
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #Header{
+    font-weight: 900;
+    font-size: 4vw;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+#name, #email, #pass, #passagain{
+    margin-bottom: 10px;
+    margin-left: 7.5vw;
+    border-radius: 10px;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    border-color: #00000000;
+    width: 20vw;
+    height: 5vh;
+}
+#name{
+  margin-bottom: 10px;
+  text-align: center; 
+  text-align: center;
+}
+#email{
+    margin-bottom: 10px;
+    text-align: center; 
+    text-align: center;
+}
+#pass{
+    margin-bottom: 10px;
+    text-align: center; 
+}
+#passagain{
+    margin-bottom: 10px;
+    text-align: center; 
+}
+#submit{
+  margin-left: 10vw;
+  border-radius: 100px;
+  border-color: #00000000;
+  padding: 0.7vw;
+}
